@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+	<html lang="ru">
+		<head>
+			<meta charset="utf-8">
+			<title>Конкурс сайта "Pink"</title>
+		</head>
+		<body>
+
+			<header class="page-header">
+				<a class="page-header__logo">
+					<img class="page-header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Логотип сайта фотографий Pink">
+				</a>
+				<nav class="main-nav">
+					<button class="main-nav--toggle" type="button">Гамбургер</button>
+					<ul class="main-nav__list site-list">
+						<li class="site-list__item site-list__item--active">
+							<a class="" href="index.html">Главная</a>
+						</li>
+						<li class="site-list__item">
+							<a class="" href="photo.html">Фотографии</a>
+						</li>
+						<li class="site-list__item"> 
+							<a class="" href="#">Конкурс</a>
+						</li>
+						<li class="site-list__item">
+							<a class="" href="https://www.htmlacademy.ru">HTML ACADEMY</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="main-banner main-banner__form">
+					<h1 class="main_banner__form--title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+				</div>
+			</header> 
+
+			<main class="page-main">
+				<div class="page-form__wrapper">
+					<h4 class="page-form__description">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту</h4>
+					<form class="page-form" method="post" action="https://echo.htmlacademy.ru">
+						<ul class="page-form__full-name full-name">
+							<li class="full-name__surname">
+								<label class="full-name__label full-name__label--surname">Фамилия</label>
+								<input class="full-name__field full-name__field--surname" type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
+							</li>
+							<li class="full-name__name">
+								<label class="full-name__label full-name__label--name">Имя</label>
+								<input class="full-name__field full-name__field--name" type="text" id="name" name="name" placeholder="Введите ваше имя*">
+							</li>
+							<li class="full-name__patronymic">
+								<label class="full-name__label full-name__label--patronymic">Отчество</label>
+								<input class="full-name__field full-name__field--patronymic" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+							</li>		
+						</ul>
+						<fieldset class="page-form__radioboxes">
+							<legend class="page-form__radio-title">С каким приложением путешествовали</legend>
+							<ul class="page-form__radio-list">
+								<li class="page-form__radio__item">
+									<input class="page-form__radio" name="ios" id="ios" type="radio" checked>
+									<label class="page-form__radio-label">Pink для iOS</label>
+								</li>	
+								<li class="page-form__radio__item">
+									<input class="page-form__radio" name="android" id="android" type="radio">
+									<label class="page-form__radio-label">Pink на Android</label>
+								</li>	
+								<li class="page-form__radio__item">
+									<input class="page-form__radio" name="windows" id="windows" type="radio">
+									<label class="page-form__radio-label">Windows Phone</label>
+								</li>	
+							</ul>
+						</fieldset>
+						<fieldset class="page-form__contacts form-contacts">
+							<legend class="form-contacts__title">Контактная информация</legend>
+							<ul class="form-contacts__list">
+								<li class="form-contacts__item">
+									<input class="form-contacts__field form-contacts__field-phone" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+									<label class="form-contacts__label">Номер телефона</label>
+								</li>
+								<li class="form-contacts__item">
+									<input class="form-contacts__field form-contacts__field-email" type="text" name="email" id="email" placeholder="Введите почту*">
+									<label class="form-contacts__label">Адрес почты</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="page-form__achievements form-achievements">
+							<legend class="form-achievements_title">Ваши безбашенные достижения в путешествии</legend>
+							<ul class="form-achievements__list">
+								<li class="form-achievements__item">
+									<input class="form-achievements-checkbox" type="checkbox" name="selfie" id="selfie" checked>
+									<label class="form-achievements-label">Сделал селфи с акулой</label>
+								</li>
+								<li class="form-achievements__item">
+									<input class="form-achievements-checkbox" type="checkbox" name="norris" id="norris">
+									<label class="form-achievements-label">Видел Чака Норриса</label>
+								</li>
+								<li class="form-achievements__item">
+									<input class="form-achievements-checkbox" type="checkbox" name="tower" id="tower" checked>
+									<label class="form-achievements-label">Удержал башню</label>
+								</li>
+								<li class="form-achievements__item">
+									<input class="form-achievements-checkbox" type="checkbox" name="burned" id="burned" checked>
+									<label class="form-achievements-label">Обгорел на пляже</label>
+								</li>
+								<li class="form-achievements__item">
+									<input class="form-achievements-checkbox" type="checkbox" name="present" id="present">
+									<label class="form-achievements-label">Накупил сувениров</label>
+								</li>
+								<li class="form-achievements__item">
+									<input class="form-achievements-checkbox" type="checkbox" name="hotel" id="hotel">
+									<label class="form-achievements-label">Разгромил отель</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="page-form__message form-message">
+							<legend class="form-message-title">Опишите свои эмоции</legend>
+							<textarea class="form-message-field" name="message" id="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+						</fieldset>
+						<div class="page-form__submit submit-form">
+							<button class="submit-form__button button" type="submit">Отправить форму</button>
+							<p class="submit-form__info"><span>*</span>Обязательные для заполнения поля</p>
+						</div>
+					</form>
+				</div>
+			</main>
+
+			<footer class="page-footer">
+				<div class="page-footer__wrapper">
+					<div class="page-footer__social social">
+						<a class="social__logo">
+							<img class="social__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Логотип сайта фотографий Pink">
+						</a>
+						<ul class="social__list">
+							<li class="social__item">
+								<a class="social__link social__link--twitter" href="twitter.com">Мы в Твиттере</a>
+							</li>
+							<li class="social__item">
+								<a class="social__link social__link--facebook" href="facebook.com">Мы в Фэйсбуке</a>
+							</li>
+							<li class="social__item">
+								<a class="social__link social__link--youtube" href="youtube.com">Мы в Ютубе</a>
+							</li>
+						</ul>
+						<div class="social__copyright copyright">
+							<p class="copyright__text">Разработано</p>
+							<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<div class="modal-overlay">
+				<div class="modal-window alert-error">
+					<div class="alert-error__message alert-text">
+						<h3 class="alert-error__title alert-title"></h3>
+						<p class="alert-error__text alert-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+					</div>
+					<div class="alert-error__button alert-button">
+						<button class="alert-button__item button">Ок</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal-overlay">
+				<div class="modal-window alert-success">
+					<div class="alert-success__message alert-text">
+						<h3 class="alert-success__title alert-title"></h3>
+						<p class="alert-success__text alert-text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+					</div>
+					<div class="alert-success__button alert-button">
+						<button class="alert-button__item button">Закрыть окно</button>
+					</div>
+				</div>
+			</div>
+
+		</body>	
+	</html>	
