@@ -7,23 +7,23 @@
 		<body>
 
 			<header class="page-header">
-				<a class="page-header__logo">
+				<a class="page-header__logo" href="#">
 					<img class="page-header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Логотип сайта фотографий Pink">
 				</a>
 				<nav class="main-nav">
 					<button class="main-nav--toggle" type="button">Гамбургер</button>
 					<ul class="main-nav__list site-list">
 						<li class="site-list__item site-list__item--active">
-							<a class="" href="#">Главная</a>
+							<a href="#">Главная</a>
 						</li>
 						<li class="site-list__item">
-							<a class="" href="photo.html">Фотографии</a>
+							<a href="photo.html">Фотографии</a>
 						</li>
 						<li class="site-list__item"> 
-							<a class="" href="form.html">Конкурс</a>
+							<a href="form.html">Конкурс</a>
 						</li>
 						<li class="site-list__item">
-							<a class="" href="https://www.htmlacademy.ru">HTML ACADEMY</a>
+							<a href="https://www.htmlacademy.ru">HTML ACADEMY</a>
 						</li>
 					</ul>
 				</nav>
@@ -74,6 +74,9 @@
 
 				<section class="testimonials">
 					<div class="testimonials__wrapper slider">
+						<input type="radio" name="testimonials-slider" id="slider1" checked="checked">
+						<input type="radio" name="testimonials-slider" id="slider2">
+						<input type="radio" name="testimonials-slider" id="slider3">
 						<ul class="testimonials__list slider__list">
 							<li class="testimonials__item slider__item">
 								<h4 class="testimonials__title">Николай Петров</h4>
@@ -89,15 +92,18 @@
 							</li>
 						</ul>
 						<p class="testimonials__toggles slider__toggles">
-							<button class="slider__toggle" type="button">1</button>
-							<button class="slider__toggle" type="button">2</button>
-							<button class="slider__toggle" type="button">3</button>
+							<label class="slider__toggle slider__toggle1" for="slider1"><label>
+							<label class="slider__toggle slider__toggle2" for="slider2"></label>
+							<label class="slider__toggle slider__toggle3" for="slider3"></label>
 						</p>
 					</div>
 				</section>
 
 				<section class="prices">
 					<div class="prices__wrapper slider">
+						<input type="radio" name="prices-slider" id="slider4" checked="checked">
+						<input type="radio" name="prices-slider" id="slider5">
+						<input type="radio" name="prices-slider" id="slider6">
 						<ul class="prices_list slider__list">
 							<li class="prices__item slider__item">
 								<h4 class="prices__title">База</h4>
@@ -122,9 +128,9 @@
 							</li>
 						</ul>
 						<p class="prices__toggles slider__toggles">
-							<button class="slider__toggle" type="button">1</button>
-							<button class="slider__toggle" type="button">2</button>
-							<button class="slider__toggle" type="button">3</button>
+							<label class="slider__toggle slider__toggle4" for="slider4"><label>
+							<label class="slider__toggle slider__toggle5" for="slider5"></label>
+							<label class="slider__toggle slider__toggle6" for="slider6"></label>
 						</p>
 					</div>
 				</section>
