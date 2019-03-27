@@ -88,7 +88,7 @@ gulp.task("serve", ["scss"], function () {
 	server.init({
 		server: ".",
 		notify: false,
-		open: true,
+		open: false,
 		cors: true,
 		ui: false
 	});
@@ -180,7 +180,7 @@ gulp.task("serv", function () {
 	server.init({
 		server: "build/",
 		notify: false,
-		open: true,
+		open: false,
 		cors: true,
 		ui: false
 	});

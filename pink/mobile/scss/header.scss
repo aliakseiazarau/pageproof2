@@ -1,0 +1,17 @@
+@import "variables.scss";
+
+@media (min-width: $desktop-width) {
+
+	.page-header__logo-image--mobile,
+	.page-header__logo-image--tablet {
+			display: none;
+	}
+
+	.page-header__logo-image--desktop {
+			display: block;
+	}
+
+	.page-header__logo {
+			order: 0;
+	}
+}
