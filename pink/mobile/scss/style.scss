@@ -4,6 +4,13 @@
 
 body { background: $red }
 
+.visually-hidden {
+  visibility: hidden;
+  font-size: 0;
+  width: 9;
+  height: 0;
+}
+
 @media (min-width: $tablet-width) {
   .wrapper {
     max-width: 660px;
@@ -16,4 +23,4 @@ body { background: $red }
     max-width: 1200px;
     margin: 0 auto;
   }
-}  
+}
