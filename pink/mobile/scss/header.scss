@@ -1,0 +1,51 @@
+@import "variables.scss";
+
+.page-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-nav {
+}
+
+.main-banner__info {
+	max-height: 271px;
+}
+
+.banner-list {
+	display: flex;
+}
+
+.page-header__logo-image--desktop,
+.page-header__logo-image--tablet {
+	display: none;
+}
+
+@media (min-width: $tablet-width) {
+	.page-header__logo-image--desktop,
+	.page-header__logo-image--mobile {
+		display: none;
+	}
+
+	.page-header__logo-image--tablet {
+		display: block;
+	}
+}
+
+@media (min-width: $desktop-width) {
+
+	.page-header__logo-image--mobile,
+	.page-header__logo-image--tablet {
+			display: none;
+	}
+
+	.page-header__logo-image--desktop {
+			display: block;
+	}
+
+	.page-header__logo {
+			order: 0;
+	}
+}

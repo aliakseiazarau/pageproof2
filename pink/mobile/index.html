@@ -2,13 +2,17 @@
 	<html lang="ru">
 		<head>
 			<meta charset="utf-8">
+			<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 			<title>Приложение сайта "Pink"</title>
+			<link href="css/style.min.css" rel='stylesheet' type='text/css'>
 		</head>
 		<body>
 
 			<header class="page-header">
 				<a class="page-header__logo" href="#">
-					<img class="page-header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Логотип сайта фотографий Pink">
+					<img class="page-header__logo-image--mobile" src="img/logo-mobile.png" width="75" height="22" alt="Логотип сайта фотографий Pink">
+					<img class="page-header__logo-image--tablet" src="img/logo-tablet.png" width="147" height="40" alt="Логотип сайта фотографий Pink">
+					<img class="page-header__logo-image--desktop" src="img/logo-desktop.png" width="147" height="40" alt="Логотип сайта фотографий Pink">
 				</a>
 				<nav class="main-nav">
 					<button class="main-nav--toggle" type="button">Гамбургер</button>
@@ -19,7 +23,7 @@
 						<li class="site-list__item">
 							<a href="photo.html">Фотографии</a>
 						</li>
-						<li class="site-list__item"> 
+						<li class="site-list__item">
 							<a href="form.html">Конкурс</a>
 						</li>
 						<li class="site-list__item">
@@ -27,11 +31,12 @@
 						</li>
 					</ul>
 				</nav>
-				
+
 				<div class="main-banner">
 					<h1 class="visually-hidden">Приложение сайта Pink. Поделитесь своими фото!</h1>
 					<div class="main-banner__info">
-						<a class="button main-banner__info--button">Скачать</a>
+						<h2 class="main-banner__info--title">Взгляните на жизнь иначе!</h2>
+						<a class="button main-banner__info--button">Скачать приложение</a>
 						<ul class="main-banner__list banner-list">
 							<li class="banner-list__item">
 								<img class="banner-list__item--apple" width="" height="" src="http://placehold.it/150x100" alt="Логотип компании Apple">
@@ -46,7 +51,7 @@
 						<p class="main-banner__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
 					</div>
 				</div>
-			</header> 
+			</header>
 
 			<main class="page-main">
 				<section class="advantages">
@@ -177,5 +182,5 @@
 					</div>
 				</div>
 			</footer>
-		</body> 
+		</body>
 	</html>
