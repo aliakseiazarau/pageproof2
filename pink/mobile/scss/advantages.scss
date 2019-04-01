@@ -19,14 +19,21 @@
 .advantages__title,
 .advantages__description {
 	text-align: center;
+	color: #283645;
 }
 
 .advantages__title {
 	margin-bottom: 22px;
+	font-family: $bold;
+	font-size: 18px;
+	line-height: 24px;
 }
 
 .advantages__description {
 	margin-bottom: 42px;
+	font-family: $regular;
+	font-size: 14px;
+	line-height: 24px;
 }
 
 .advantages__effect {
@@ -62,11 +69,26 @@
 	}
 
 	.advantages__effect--title {
-		margin-bottom: 36px;	
+		margin-bottom: 36px;
+		color: #283645;
+		font-family: $bold;
+		font-size: 30px;
+		line-height: 36px;	
 	}
 
 	.advantages__effect--text {
 		margin-bottom: 22px;
+		color: #283645;
+		font-family: $regular;
+		font-size: 18px;
+		line-height: 30px;	
+	}
+
+	.advantages__effect--link {
+		color: #d22856;
+		font-family: $regular;
+		font-size: 18px;
+		line-height: 30px;	
 	}
 }		
 
@@ -99,10 +121,16 @@
 
 	.advantages__title {
 		margin-bottom: 22px;
+		font-family: $bold;
+		font-size: 30px;
+		line-height: 30px;
 	}
 
 	.advantages__description {
 		margin-bottom: 42px;
+		font-family: $regular;
+		font-size: 18px;
+		line-height: 30px;
 	}
 
 	.advantages__effect {
@@ -111,14 +139,22 @@
 	}
 
 	.advantages__effect--title {
-		margin-bottom: 24px;	
+		margin-bottom: 24px;
+		font-family: $bold;
+		font-size: 30px;
+		line-height: 36px;	
 	}
 
 	.advantages__effect--text {
 		margin-bottom: 42px;
+		font-family: $regular;
+		font-size: 14px;
+		line-height: 24px;
 	}
 
 	.advantages__effect--link {
 		margin-bottom: 118px;
+		font-size: 14px;
+		line-height: 24px;
 	}
 }
