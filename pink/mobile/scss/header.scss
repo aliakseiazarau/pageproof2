@@ -5,17 +5,14 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	background-image: url(/img/back-mobile@1x.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .main-nav {
-}
-
-.main-banner__info {
-	max-height: 271px;
-}
-
-.banner-list {
-	display: flex;
+	padding-top: 22px;
+	padding-bottom: 26px;
 }
 
 .page-header__logo-image--desktop,
@@ -23,7 +20,64 @@
 	display: none;
 }
 
+.site-list {
+	font-family: $bold;
+	font-size: 18px;
+	line-height: 32px;
+	text-transform: uppercase;
+}
+
+.site-list__item a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.main-banner__info {
+	max-height: 271px;
+	background-color: #1d2631;
+	padding-top: 28px;
+	padding-bottom: 36px;
+	color: #fff;
+}
+
+.main-banner__info--button {
+	font-family: $bold;
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.main-banner__text {
+	font-family: $light;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.main-banner__info--title {
+	display: none;
+}
+
+.banner-list {
+	display: flex;
+}
+
+.main-banner__info--title,
+.main_banner__photo--title,
+.main_banner__form--title {
+	padding-top: 40px;
+	padding-bottom: 60px;
+	color: #fff;
+	font-family: $light;
+	font-size: 24px;
+}
+
 @media (min-width: $tablet-width) {
+
+	.page-header {
+		background-image: url(/img/back-tablet@1x.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
 	.page-header__logo-image--desktop,
 	.page-header__logo-image--mobile {
 		display: none;
@@ -32,9 +86,40 @@
 	.page-header__logo-image--tablet {
 		display: block;
 	}
+
+	.main-nav {
+		padding-top: 27px;
+		padding-bottom: 43px;
+	}
+
+	.main-banner__info {
+		background-color: transparent;
+		padding-bottom: 112px;
+	}
+
+	.main-banner__info--title,
+	.main_banner__photo--title,
+	.main_banner__form--title {
+		padding-top: 82px;
+		padding-bottom: 92px;
+		font-family: $light;
+		font-size: 50px;
+	}
+
+	.main-banner__info--title {
+		display: block;
+		padding: 0;
+		font-size: 40px;
+	}
 }
 
 @media (min-width: $desktop-width) {
+
+	.page-header {
+		background-image: url(/img/back-desktop.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
 
 	.page-header__logo-image--mobile,
 	.page-header__logo-image--tablet {
@@ -48,4 +133,45 @@
 	.page-header__logo {
 			order: 0;
 	}
+
+	.main-nav  {
+		display: flex;
+		padding-top: 27px;
+		padding-bottom: 43px;
+	}
+
+	.main-nav__list {
+		display: flex;
+		order: 0;
+	}
+
+	.site-list {
+		font-family: $regular;
+		font-size: 18px;
+		line-height: 18px;
+		text-transform: capitalize;
+	}
+
+	.main-nav--toggle {
+		display: none;
+	}
+	
+	.main-banner__info {
+		background-color: transparent;
+		padding-bottom: 125px;
+	}
+	
+	.main-banner__info--title,
+	.main_banner__photo--title,
+	.main_banner__form--title {
+		padding-top: 82px;
+		padding-bottom: 105px;
+		font-size: 50px;
+	}
+
+	.main-banner__info--title {
+		display: block;
+		padding: 0;
+	}
+
 }
