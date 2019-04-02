@@ -1,0 +1,29 @@
+@import "variables.scss";
+
+
+
+.slider__item1,
+.slider__item2,
+.slider__item3 {
+	display: none;
+}
+
+input:checked:nth-child(1) ~ .slider__list .slider__item1 {
+	display: block;
+}
+
+input:checked:nth-child(2) ~ .slider__list .slider__item2 {
+	display: block;
+}
+
+input:checked:nth-child(3) ~ .slider__list .slider__item3 {
+	display: block;
+}
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+
+}
