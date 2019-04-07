@@ -1,0 +1,68 @@
+@import "variables.scss"; 
+
+.social {
+	display: none;
+	margin: 0 auto;
+	padding: 70px 0;
+}
+
+.social-photo,
+.social-form {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.social__logo {
+	margin-bottom: 35px;
+}
+
+.social__list {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 37px;
+}
+
+.social__item {
+	margin: 0 8px;
+}
+
+.copyright {
+	display: flex;
+	justify-content: center;
+}
+
+.copyright__text {
+	color: #283645;
+	font-family: $regular;
+	font-size: 14px;
+	line-height: 18px;
+	margin-right: 11px;
+}
+
+@media (min-width: $tablet-width) {
+	.social,
+	.social-photo,
+	.social-form {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.social__logo,
+	.social__list {
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.social,
+	.social-photo,
+	.social-form {
+		max-width: 1170px;
+	}
+
+	.copyright__text {
+		font-size: 18px;
+	}
+}
