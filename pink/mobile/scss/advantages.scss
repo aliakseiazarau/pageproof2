@@ -1,5 +1,9 @@
 @import "variables.scss";
 
+.advantages__list {
+	background-color: #f2f2f2;
+}
+
 .advantages__headline {
 	padding-top: 50px;
 	padding-bottom: 124px;
@@ -38,6 +42,7 @@
 
 .advantages__effect {
 	display: none;
+	background-color: #f2f2f2;
 }
 
 @media (min-width: $tablet-width) {
@@ -66,6 +71,7 @@
 	.advantages__effect {
 		display: block;
 		padding-top: 102px;
+		background-color: #fff;
 	}
 
 	.advantages__effect--title {
@@ -136,6 +142,7 @@
 	.advantages__effect {
 		display: block;
 		padding-top: 114px;
+		background-color: #f2f2f2;
 	}
 
 	.advantages__effect--title {

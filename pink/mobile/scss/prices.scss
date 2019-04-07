@@ -1,0 +1,121 @@
+@import "variables.scss";
+
+.prices {
+	padding: 30px 0;
+	background-color: #f2f2f2;
+}
+
+.table {
+	border-collapse: collapse;
+	word-break: break-all;
+	width: auto;
+	margin: 0 auto;
+}
+
+.table__body--header {
+	min-width: 233px;
+	color: #fff;
+	background-color: #fff;
+	text-transform: uppercase;
+	background: #283645;
+	border: 2px solid #e5e5e5;
+	padding: 13px;
+}
+
+.hidden-cell {
+	display: none;
+	color: transparent;
+}
+
+.table__body--cell {
+	min-width: 276px;
+	padding: 13px;
+	background-color: #fff;
+	border: 2px solid #e5e5e5;
+}
+
+.prices__title {
+	font-family: $bold;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.prices__cost {
+	font-family: $light;
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.prices__description {
+	color: #283645;
+	font-family: $regular;
+	font-size: 14px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+
+	.table__body--header,
+	.table__body--cell {
+		min-width: 152px;
+	}
+
+	.hidden-cell {
+		display: table-cell;
+		border: none;
+		opacity: 0;
+	}
+
+	.table__body--cell.hidden-cell {
+		border: 2px solid #e5e5e5;
+		opacity: 1;
+	}
+
+	.prices__title {
+		font-size: 16px;
+	}
+
+	.prices__cost {
+		font-size: 18px;
+	}
+
+	.prices__description {
+		font-size: 14px;
+		text-transform: capitalize;
+	}
+}
+
+@media (min-width: $desktop-width) {
+
+	.table__body--header,
+	.table__body--cell {
+		min-width: 233px;
+	}
+
+	.hidden-cell {
+		display: table-cell;
+		border: none;
+		opacity: 0;
+	}
+
+	.table__body--cell.hidden-cell {
+		border: 2px solid #e5e5e5;
+		opacity: 1;
+	}
+
+	.prices__title {
+		font-size: 18px;
+	}
+
+	.prices__cost {
+		font-size: 18px;
+	}
+
+	.prices__description {
+		font-size: 18px;
+		text-transform: capitalize;
+	}
+}
