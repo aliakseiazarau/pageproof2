@@ -1,0 +1,159 @@
+@import "variables.scss";
+
+.gallery__title {
+	color: #283645;
+	width: 288px;
+	font-family: $regular;
+	font-size: 14px;
+	line-height: 30px;
+	padding: 45px 0 50px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.main-photo__image--mobile,
+.main-photo__image--tablet,
+.main-photo__image--desktop {
+	width: 100%;
+}
+
+.main-photo__image--tablet,
+.main-photo__image--desktop {
+	display: none;
+}
+
+.photos__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 280px;
+	margin: 0 auto;
+}
+
+.photos__list__item {
+	width: 280px;
+	margin-bottom: 20px;
+}
+
+.main-photo__description,
+.image-description {
+	max-width: 280px;
+	min-height: auto;
+	margin: 0 auto;
+	background-color: #f2f2f2;
+}
+
+.main-photo__description {
+	margin-bottom: 20px;
+}
+
+.image-description {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	box-sizing: border-box;
+	padding: 18px 20px 20px;
+	background-color: #f2f2f2;
+}
+
+.image-description__author {
+	color: #283645;
+	font-family: $bold;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.image-description__time {
+	color: #283645;
+	font-family: $regular;
+	font-size: 12px;
+	line-height: 24px;
+}
+
+.image-description__title {
+	color: #283645;
+	font-family: $regular;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.image-description__likes {
+	color: #d22856;
+	margin-top: auto;
+	font-family: $light;
+	font-size: 12px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+
+	.gallery__title {
+		width: 620px;
+		font-size: 18px;
+		padding-top: 92px;
+    padding-bottom: 76px
+	}
+
+	.main-photo__image--mobile,
+	.main-photo__image--desktop {
+		display: none;
+	}
+
+	.main-photo__image--tablet {
+		display: block;
+	}
+
+	.photos__list {
+		width: 620px;
+	}
+
+	.photos__list__item {
+		width: 300px;
+		margin-bottom: 20px;
+	}
+
+	.main-photo__description {
+		margin-bottom: 50px;
+	}
+
+	.image-description {
+		max-width: 300px;
+		min-height: 110px;
+	}
+
+	.main-photo__description {
+		max-width: 620px;
+	}
+
+}
+
+@media (min-width: $desktop-width) {
+
+	.gallery__title {
+    padding-bottom: 88px
+	}
+
+	.main-photo__image--mobile,
+	.main-photo__image--tablet {
+		display: none;
+	}
+
+	.main-photo__image--desktop {
+		display: block;
+	}
+
+	.photos__list {
+		width: 940px;
+	}
+
+	.photos__list__item {
+		width: 300px;
+		margin-bottom: 53px;
+	}
+
+	.main-photo__description {
+		max-width: 940px;
+	}
+
+}

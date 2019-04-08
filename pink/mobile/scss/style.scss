@@ -6,6 +6,7 @@
 @import "prices";
 @import "contacts";
 @import "footer";
+@import "main-photo";
 
 img {
   max-width: 100%;
@@ -13,7 +14,8 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 2em;
+	font-size: 2em;
+	font-weight: normal;
   margin: 0;
 }
 
