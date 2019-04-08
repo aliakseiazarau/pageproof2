@@ -7,6 +7,7 @@
 @import "contacts";
 @import "footer";
 @import "main-photo";
+@import "editor";
 
 img {
   max-width: 100%;
@@ -27,6 +28,11 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+form {
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {

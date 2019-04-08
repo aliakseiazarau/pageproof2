@@ -112,21 +112,26 @@
 					<section class="gallery__editor editor">
 						<h4 class="editor__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h4>
 						<form class="editor__content editor-block" action="https://echo.htmlacademy.ru" method="post">
-							<img class="editor-block__image" src="http://placehold.it/150x100" width="" height="" alt="Редактируемая фотография">
+							<img class="editor-block__image" src="/img/photo-7-desktop.jpg" width="300" height="400" alt="Редактируемая фотография">
+							<img class="editor-block__image--mobile" src="/img/photo-7-mobile.jpg" width="280" height="374" alt="Редактируемая фотография">
 							<div class="editor-block__controls">
-								<div class="editor-block__controls--cut">
-									<input class="range-filter" type="range" id="range-filter-cut" name="range-filter">
-								</div>
-								<div class="editor-block__controls--bright">
-									<input class="range-filter" type="range" id="range-filter-bright" name="range-filter">
-								</div>
-								<div class="editor-block__controls--color">
-									<input class="range-filter" type="range" id="range-filter-light" name="range-filter">
-								</div>
-							</div>
-							<div class="editor-block__buttons">
-								<input class="button  editor-block__buttons-submit" id="submit-button" type="submit" value="Запостить">
-								<input class="button  editor-block__buttons-cancel" id="cancel-button" type="reset" value="Отмена">
+								<div class="editor-block__controls--wrapper">
+									<div class="editor-block__controls--sliders">
+										<div class="editor-block__controls--cut">
+											<input class="range-filter" type="range" id="range-filter-cut" name="range-filter">
+										</div>
+										<div class="editor-block__controls--bright">
+											<input class="range-filter" type="range" id="range-filter-bright" name="range-filter">
+										</div>
+										<div class="editor-block__controls--color">
+											<input class="range-filter" type="range" id="range-filter-light" name="range-filter">
+										</div>
+									</div>
+									<div class="editor-block__buttons">
+										<input class="button  editor-block__buttons-submit" id="submit-button" type="submit" value="Запостить">
+										<input class="button  editor-block__buttons-cancel" id="cancel-button" type="reset" value="Отмена">
+									</div>
+								</div>	
 							</div>
 						</form>
 					</section>
