@@ -1,0 +1,65 @@
+@import "variables.scss"; 
+
+.page-form__description {
+	color: #283645;
+	max-width: 280px;
+	font-family: $regular;
+	font-size: 14px;
+	line-height: 30px;
+	margin: 0 auto;
+	padding: 54px 0 50px;
+	text-align: center;
+}
+
+.full-name {
+	width: 280px;
+	margin: 0 auto 42px;
+}
+
+fieldset {
+	border: none;
+}
+
+.full-name__item {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.full-name__field {
+	color: #283645;
+	font-family: $regular;
+	font-size: 18px;
+	line-height: 30px;
+	padding: 15px 20px;
+}
+
+.page-form__radio {
+	font-family: $regular;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.full-name__label {
+	color: #d22856;
+	font-family: $regular;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+	.page-form__description {
+		max-width: 500px;
+		font-size: 18px;
+		padding: 98px 0 76px;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.page-form__description {
+		max-width: 780px;
+	}
+}
+
+// border: 2px groove (internal value);
